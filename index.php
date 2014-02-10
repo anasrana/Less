@@ -224,7 +224,7 @@
 		<span class="sep"> • </span>
 		<a href="http://go.warwick.ac.uk/anasrana">Official Website</a>
 		<br>
-		<a >Copyright Anas Ahmad Rana, 2014</a>
+		<a href="https://github.com/anasrana/Less">Copyright Anas Ahmad Rana, 2014</a>
 	</div><!-- .site-info -->
 </footer><!-- #colophon .site-footer -->
 
