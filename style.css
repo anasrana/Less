@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url( 'http://fonts.googleapis.com/css?family=Open+Sans');
 /*
 Theme Name: Less
 Theme URI: http://lessmade.com/themes/less
@@ -13,7 +14,7 @@ License: GNU General Public License
 -------------------------------------------------------------- */
 /* Reset
 -------------------------------------------------------------- */
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -104,6 +105,7 @@ video {
   vertical-align: baseline;
   font: inherit;
   font-size: 100%;
+  color: #888888;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -155,7 +157,7 @@ code,
 kbd,
 tt,
 var {
-  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 abbr,
 acronym {
@@ -329,14 +331,15 @@ textarea {
 body,
 button,
 input,
-select {
+select,
+ul {
   padding: 0;
   margin: 0;
   background: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 26.64px;
-  font-size: 18px;
-  font-size: 1.8rem;
+  line-height: 19px;
+  font-size: 15px;
+  font-size: 1.5rem;
 }
 /* typography
 -------------------------------------------------------------- */
@@ -348,22 +351,23 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: "Arvo", Georgia, serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 h1 {
-  line-height: 71.03999999999999px;
-  font-size: 48px;
-  font-size: 4.8rem;
+  line-height: 65.03999999999999px;
+  font-size: 28px;
+  font-size: 3.0rem;
+  color: #4E4E4E;
 }
 h2 {
   line-height: 50.32px;
-  font-size: 34px;
-  font-size: 3.4rem;
+  font-size: 25px;
+  font-size: 2.5rem;
 }
 h3 {
   line-height: 41.44px;
-  font-size: 28px;
-  font-size: 2.8rem;
+  font-size: 20px;
+  font-size: 2.0rem;
 }
 h4 {
   line-height: 26.64px;
@@ -386,6 +390,10 @@ ol {
 }
 ul {
   list-style: disc;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 20px;
+  font-size: 15px;
+  font-size: 1.5rem;
 }
 ol {
   list-style: decimal;
@@ -395,7 +403,7 @@ ol ol,
 ul ol,
 ol ul {
   margin-bottom: 0;
-  margin-left: 1.5em;
+  margin-left: 1.3em;
 }
 dt {
   font-weight: bold;
@@ -466,7 +474,7 @@ a:active {
 header {
   padding: 20px 0;
   background: transparent;
-  margin: 20px auto;
+  margin: 20px 5px auto;
 }
 header .gravatar {
   overflow: hidden;
@@ -498,12 +506,21 @@ header #brand h1 a {
   color: #565656;
   text-decoration: none;
 }
+header #brand h1 a:hover {
+  color: #848482;
+  text-decoration: none;
+}
+header #brand h1 a:active {
+  color: #000000;
+  text-decoration: none;
+}
 header #brand h1 span {
   font-weight: 200;
   color: #888888;
   text-transform: lowercase;
 }
 header nav {
+  padding-top: 8px;
   float: left;
 }
 header nav ul {
@@ -511,16 +528,22 @@ header nav ul {
   margin: 0;
 }
 header nav ul li {
+  color: #888888;
+  font-size: 14px;
   float: left;
   margin: 2px 10px 0 0;
 }
 header nav ul li a {
   color: #888888;
-  font-size: 14px;
+  font-size: 16px;
+}
+header nav ul li a:active {
+  color: #000000;
+  font-size: 16px;
 }
 .container {
   max-width: 720px;
-  padding: 20px;
+  padding: 10px;
   margin: 0 auto;
   position: relative;
 }
@@ -534,8 +557,8 @@ article {
 }
 article .title {
   color: #404040;
-  line-height: 56.24px;
-  font-size: 38px;
+  line-height: 40.24px;
+  font-size: 30px;
   font-size: 3.8rem;
   font-weight: 700;
 }
@@ -547,7 +570,7 @@ article .title a:hover {
   color: #007998;
 }
 article .post-meta {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-size: 14px;
 }
 article .post-meta a {
@@ -562,7 +585,7 @@ article .the-content a {
   text-decoration: none;
 }
 article .the-content p {
-  color: #787878;
+  color: #888888;
 }
 article .the-content img {
   width: 100%;
@@ -583,6 +606,8 @@ article .meta .post-categories {
   margin: 0 0 10px 0;
 }
 article .meta .post-categories li {
+  color: #888888;
+  font-size: 14px;
   display: inline-block;
   margin-right: 10px;
 }
@@ -591,7 +616,7 @@ article .meta .post-categories li {
   border-bottom: none;
 }
 .page article .title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 /* Pagination */
 #pagination {
@@ -657,9 +682,10 @@ h3#comments {
   color: #888888;
 }
 footer {
+  font-family: "Open Sans" ;
   text-align: center;
   padding-bottom: 40px;
-  font-size: 12px;
+  font-size: 14px;
 }
 /* Misc & mixens
 -------------------------------------------------------------- */
