@@ -541,6 +541,15 @@ header nav ul li a:active {
   color: #000000;
   font-size: 16px;
 }
+nav ul ul {
+  display: none;
+}
+  nav ul li:hover > ul {
+    display: block;
+  }
+    nav ul li:active > ul {
+    display: block;
+  }
 .container {
   max-width: 720px;
   padding: 10px;
